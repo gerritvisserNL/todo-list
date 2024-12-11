@@ -1,0 +1,40 @@
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerrit Visser | Web Developer</title>
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="normalize.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="glass-container">
+        <h1>To-do List</h1>
+        <div id="inputBox">
+          <input
+            id="taskInput"
+            type="text"
+            placeholder="Add a new task..."
+            maxlength="25"
+          />
+          <button id="addBtn">+</button>
+        </div>
+        <div id="btnBox">
+          <button id="completeBtn">Completed</button>
+          <button id="incompleteBtn">Incomplete</button>
+          <button id="deleteAllBtn">Delete All</button>
+        </div>
+        <div id="tasksList"><ul></ul></div>
+        <div class="footer"><p>Code by Gerrit</p></div>
+      </div>
+    </div>
+  </body>
+</html>

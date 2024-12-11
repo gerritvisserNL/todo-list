@@ -1,0 +1,213 @@
+body {
+  width: 100%;
+  height: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  background-image: url("uitzicht_op_zee.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.glass-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  min-height: 31rem;
+  padding: 1rem;
+  gap: 1rem;
+  border: 1px solid hsl(0, 0%, 100%, 0.3);
+  border-radius: 1rem;
+  background: hsla(0, 0%, 100%, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+#inputBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 18rem;
+}
+
+#inputBox input {
+  width: 15rem;
+  height: 2rem;
+  border-radius: 1rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  background-color: hsla(0, 0%, 100%, 0.3);
+  padding-left: 0.75rem;
+  transition: background-color 0.2s ease;
+}
+
+#inputBox input:hover {
+  background-color: hsla(0, 0%, 100%, 0.6);
+}
+
+#inputBox input:focus {
+  outline: none;
+  border: 1px solid hsl(0, 0%, 50%);
+  background-color: hsla(0, 0%, 100%, 0.6);
+}
+
+#addBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+  background-color: hsla(0, 0%, 100%, 0.3);
+  font: bolder;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+#addBtn:hover {
+  cursor: pointer;
+  background-color: hsla(0, 0%, 100%, 0.6);
+}
+
+#btnBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 18rem;
+}
+
+#completeBtn {
+  height: 1.5rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 0.75rem;
+  background: hsla(210, 100%, 20%, 0.4);
+  color: hsl(0, 0%, 100%);
+  padding: 0 0.75rem;
+  transition: background-color 0.3s ease;
+}
+
+#completeBtn:hover {
+  cursor: pointer;
+  background-color: hsla(210, 100%, 15%, 0.6);
+}
+
+#incompleteBtn {
+  height: 1.5rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 0.75rem;
+  background: hsla(210, 100%, 20%, 0.4);
+  color: hsl(0, 0%, 100%);
+  padding: 0 0.75rem;
+  transition: background-color 0.3s ease;
+}
+
+#incompleteBtn:hover {
+  cursor: pointer;
+  background-color: hsla(210, 100%, 15%, 0.6);
+}
+
+#deleteAllBtn {
+  height: 1.5rem;
+  width: 5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#deleteAllBtn:hover {
+  cursor: pointer;
+  background-color: hsla(210, 100%, 15%, 0.6);
+  color: hsl(0, 0%, 100%);
+}
+
+#tasksList {
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+}
+
+.taskItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 0.2rem;
+  background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+.taskItem input[type="checkbox"] {
+  appearance: none;
+  -webkite-appearance: none;
+  outline: none;
+  width: 1rem;
+  height: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+.taskItem input[type="checkbox"]:checked {
+  background-color: hsl(120, 100%, 30%);
+  border-color: hsl(120, 100%, 30%);
+}
+
+.taskItem input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 5px;
+  height: 9px;
+  border: solid hsl(0, 0%, 100%);
+  border-width: 0 2px 2px 0;
+  transform: rotate(40deg);
+}
+
+.taskItem p {
+  margin-left: auto;
+  font: bolder;
+}
+
+.removeBtn {
+  background-color: transparent;
+  border: none;
+  color: hsl(0, 0%, 0%);
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.removeBtn:hover {
+  color: hsl(0, 100%, 50%);
+}
+
+.footer {
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer p {
+  width: 100%;
+  text-align: right;
+  padding-right: 0.25rem;
+}
